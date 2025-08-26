@@ -1,0 +1,39 @@
+<mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <fa-icon [icon]="dragonIcon"></fa-icon>
+      Raid
+    </ng-template>
+    <Raid/>
+  </mat-tab>
+
+  <mat-tab label="Recrutement">
+    <ng-template mat-tab-label>
+      <fa-icon [icon]="peoplePullIcon"></fa-icon>
+      Recrutement
+    </ng-template>
+    <Recrutement/>
+  </mat-tab>
+
+  <mat-tab label="Guilde">
+    <ng-template mat-tab-label>
+      <fa-icon [icon]="peopleIcon"></fa-icon>
+      Guilde
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Plan">
+    <ng-template mat-tab-label>
+      <fa-icon [icon]="mapIcon"></fa-icon>
+      Plan
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="Stats">
+    <ng-template mat-tab-label>
+      <fa-icon [icon]="chartIcon"></fa-icon>
+      Stats
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+

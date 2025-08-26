@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  Composition {
+    flex: 1;
+  }
+  .disponibles {
+    flex: 1 1 auto;
+  }
+}
