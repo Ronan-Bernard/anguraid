@@ -1,3 +1,5 @@
+@use '../../../styles/variables' as *;
+
 :host {
   display: flex;
   flex-direction: row;
@@ -6,5 +8,36 @@
   }
   .disponibles {
     flex: 1 1 auto;
+    padding: $spacing-lg;
+
+    h2 {
+      margin-top: 0;
+      color: $text-primary;
+      border-bottom: 2px solid $primary-color;
+      padding-bottom: $spacing-sm;
+    }
+
+    .loading {
+      text-align: center;
+      padding: $spacing-xxl;
+      color: $text-secondary;
+      font-style: italic;
+    }
+
+    .error {
+      background: $error-bg;
+      color: $error-text;
+      padding: $spacing-lg;
+      border: 1px solid $error-border;
+      border-radius: $border-radius-sm;
+      margin: $spacing-lg 0;
+    }
+
+    .hero-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: $spacing-lg;
+      padding: $spacing-lg 0;
+    }
   }
 }

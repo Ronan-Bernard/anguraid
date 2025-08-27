@@ -1,4 +1,20 @@
 <Composition></Composition>
+
 <div class="disponibles">
-Joueurs disponibles (donner un range, pas la valeur déf)
+  <h2>Joueurs disponibles</h2>
+
+  <div *ngIf="loading" class="loading">
+    Chargement des candidats...
+  </div>
+
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error" class="hero-list">
+    <app-hero-display
+      *ngFor="let candidat of candidats"
+      [candidat]="candidat">
+    </app-hero-display>
+  </div>
 </div>

@@ -1,0 +1,68 @@
+@use '../../../styles/variables' as *;
+
+.hero-card {
+  background: $bg-light;
+  border: 1px solid $border-light;
+  border-radius: $border-radius-md;
+  padding: $spacing-lg;
+  box-shadow: 0 2px 4px $shadow-light;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 300px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px $shadow-medium;
+  }
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-md;
+  border-bottom: 1px solid $border-medium;
+  padding-bottom: $spacing-sm;
+}
+
+.hero-name {
+  margin: 0;
+  color: $text-primary;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hero-category {
+  background: $primary-color;
+  color: $text-white;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius-sm;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.hero-info {
+  .hero-class {
+    margin: 0 0 $spacing-md 0;
+    color: $text-secondary;
+    font-style: italic;
+  }
+}
+
+.hero-stats {
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing-xs;
+    padding: $spacing-xs 0;
+
+    .stat-label {
+      color: $text-secondary;
+      font-size: 0.9rem;
+    }
+
+    .stat-value {
+      color: $text-primary;
+      font-weight: 500;
+    }
+  }
+}

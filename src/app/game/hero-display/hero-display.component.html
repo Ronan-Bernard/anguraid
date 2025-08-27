@@ -1,0 +1,33 @@
+<div class="hero-card">
+  <div class="hero-header">
+    <h3 class="hero-name">{{ candidat.name }}</h3>
+    <span class="hero-category">{{ getHeroCategoryName(candidat.heroCategory) }}</span>
+  </div>
+
+  <div class="hero-info">
+    <p class="hero-class">{{ getHeroClassName(candidat.heroClass) }}</p>
+
+    <div class="hero-stats">
+      <div class="stat-row">
+        <span class="stat-label">Équipement:</span>
+        <span class="stat-value">{{ candidat.equipement }}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Fidélité:</span>
+        <span class="stat-value">{{ candidat.fidelite }}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Discipline:</span>
+        <span class="stat-value">{{ candidat.discipline }}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Égoïsme:</span>
+        <span class="stat-value">{{ candidat.egoisme }}</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Leadership:</span>
+        <span class="stat-value">{{ candidat.leadership }}</span>
+      </div>
+    </div>
+  </div>
+</div>
